@@ -1,0 +1,75 @@
+/* Mobile first styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='url'] {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.8rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e7f5e6;
+  border: 1px solid #b2dfb0;
+  border-radius: 4px;
+  word-break: break-word;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+
+  input[type='url'] {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
